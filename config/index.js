@@ -1,3 +1,5 @@
+import { resolve } from 'path'
+
 const config = {
   projectName: "trend_mall_miniapp",
   date: "2022-2-10",
@@ -10,7 +12,16 @@ const config = {
   sourceRoot: "src",
   outputRoot: "dist",
   plugins: [],
-  defineConstants: {},
+  defineConstants: {
+    IS_H5: process.env.TARO_ENV === "h5",
+    IS_WEAPP: process.env.TARO_ENV === "weapp"
+  },
+  alias: {
+    "@src": resolve(__dirname, "..", "src"),
+    "@components": resolve(__dirname, "..", "src/components"),
+    "@utils": resolve(__dirname, "..", "src/utils"),
+    "@service": resolve(__dirname, "..", "src/service")
+  },
   copy: {
     patterns: [],
     options: {},
