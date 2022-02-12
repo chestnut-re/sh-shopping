@@ -5,6 +5,15 @@ module.exports = {
   defineConstants: {},
   mini: {},
   h5: {
+    styleLoaderOption: {},
+    output: {
+      filename: 'static/js/[name].[hash:8].js',
+      chunkFilename: 'static/js/[name].[chunkhash:8].js',
+    },
+    miniCssExtractPluginOption: {
+      filename: 'static/css/[name].[contenthash:8].css',
+      chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
+    },
     /**
      * WebpackChain 插件配置
      * @docs https://github.com/neutrinojs/webpack-chain
@@ -33,4 +42,4 @@ module.exports = {
     //     }))
     // }
   },
-};
+}

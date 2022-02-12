@@ -1,10 +1,8 @@
 import React, { useCallback } from 'react'
 import { View, Text, Button, Image } from '@tarojs/components'
-import Taro from '@tarojs/taro';
+import Taro from '@tarojs/taro'
 import { useEnv, useNavigationBar, useModal, useToast } from 'taro-hooks'
-import {
-  SafeAreaView
-} from "@components";
+import { SafeAreaView } from '@components'
 import './index.less'
 
 const Index: React.FC = () => {
@@ -28,14 +26,16 @@ const Index: React.FC = () => {
           使用Modal
         </Button>
 
-        <Button className='button'
+        <Button
+          className='button'
           onClick={() => {
             showToast({ title: 'Toast 弹框!' })
           }}
         >
           使用Toast
         </Button>
-        <Button className='button'
+        <Button
+          className='button'
           onClick={() => {
             Taro.navigateTo({ url: '/pages/demo/listview/index' })
           }}

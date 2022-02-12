@@ -1,1 +1,1 @@
-export { default as SafeAreaView } from './safeAreaView'
+export { default as SafeAreaView } from './SafeAreaView'
