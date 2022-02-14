@@ -1,5 +1,5 @@
 export default {
   navigationBarTitleText: '首页',
   enableShareAppMessage: true,
-  disableScroll: true,
+  navigationStyle: 'custom',
 }

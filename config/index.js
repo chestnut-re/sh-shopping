@@ -20,6 +20,7 @@ const config = {
   alias: {
     '@': resolve(__dirname, '..', 'src/'),
     '@src': resolve(__dirname, '..', 'src'),
+    "@assets": resolve(__dirname, "..", "src/assets"),
     '@components': resolve(__dirname, '..', 'src/components'),
     '@utils': resolve(__dirname, '..', 'src/utils'),
     '@service': resolve(__dirname, '..', 'src/service'),
@@ -53,6 +54,7 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
+    esnextModules: [/@antmjs[\\/]vantui/],
     router: {
       mode: 'browser',
       customRoutes: {},
