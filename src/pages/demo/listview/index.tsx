@@ -1,12 +1,13 @@
 
-import React from "react";
+import React, { useEffect, useState } from 'react'
+
 import { View } from "@tarojs/components";
 import "./index.less";
 import {
   SafeAreaView
+  // eslint-disable-next-line import/first
 } from "@components";
 import ListView, { LazyBlock } from "taro-listview";
-import { useEffect, useState } from 'react'
 
 /**
  * 安全区域视图

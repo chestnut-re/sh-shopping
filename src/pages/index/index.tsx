@@ -2,7 +2,7 @@ import React, { useCallback } from 'react'
 import { View, Text, Button, Image } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import { useEnv, useNavigationBar, useModal, useToast } from 'taro-hooks'
-import { SafeAreaView } from '@components'
+import { SafeAreaView, ImgView } from '@components'
 import './index.less'
 
 const Index: React.FC = () => {
@@ -42,6 +42,22 @@ const Index: React.FC = () => {
         >
           list-View 页面
         </Button>
+        <View className='imgView'>
+          <ImgView
+            width={100}
+            height={100}
+            src='https://img.yzcdn.cn/vant/cat.jpeg'
+            className='img'
+          />
+        </View>
+        <View className='imgView'>
+          <ImgView
+            width={100}
+            height={100}
+            src='xxx'
+            className='img'
+          />
+        </View>
       </View>
       <View className='demo-bottom'>
         <SafeAreaView>
