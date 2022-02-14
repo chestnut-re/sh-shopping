@@ -12,6 +12,8 @@ export default {
     'pages/index/index',
     // 测试页
     'pages/debugPage/index',
+    // Template页
+    'pages/templatePage/index',
   ],
   tabBar: {
     custom: false,
