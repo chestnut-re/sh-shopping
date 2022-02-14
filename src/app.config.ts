@@ -15,6 +15,15 @@ export default {
     // Template页
     'pages/templatePage/index',
   ],
+  subpackages: [
+    {
+      root: 'minePages',
+      pages: [
+        // 分包
+        'pages/index/index',
+      ],
+    },
+  ],
   tabBar: {
     custom: false,
     color: '#5F5F5F',

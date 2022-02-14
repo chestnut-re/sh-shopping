@@ -1,11 +1,11 @@
 import React, { useCallback } from 'react'
 import { View, Text, Button, Image } from '@tarojs/components'
+import Taro from '@tarojs/taro'
 import { useEnv, useNavigationBar, useModal, useToast } from 'taro-hooks'
 import { SafeAreaView, ImgView } from '@components'
 import './index.less'
-import { TrendBridge } from '../../jsbridge'
 
-const DebugPage: React.FC = () => {
+const Index: React.FC = () => {
   const [show] = useModal({
     title: 'Modal!',
     showCancel: false,
@@ -20,10 +20,10 @@ const DebugPage: React.FC = () => {
   }, [show])
 
   return (
-    <SafeAreaView className='DebugPage__root'>
+    <SafeAreaView className='DemoScreen__root'>
       <View className='content' style={{ flex: 1 }}>
         <Button className='button' onClick={handleModal}>
-          DebugPage
+          使用Modal
         </Button>
 
         <Button
@@ -37,31 +37,37 @@ const DebugPage: React.FC = () => {
         <Button
           className='button'
           onClick={() => {
-            TrendBridge.navigateTo({ url: '/pages/demo/listview/index' })
+            Taro.navigateTo({ url: '/pages/demo/listview/index' })
           }}
         >
           list-View 页面
         </Button>
         <View className='imgView'>
-          <ImgView width={100} height={100} src='https://img.yzcdn.cn/vant/cat.jpeg' className='img' />
+          <ImgView
+            width={100}
+            height={100}
+            src='https://img.yzcdn.cn/vant/cat.jpeg'
+            className='img'
+          />
         </View>
         <View className='imgView'>
-          <ImgView width={100} height={100} src='xxx' className='img' />
+          <ImgView
+            width={100}
+            height={100}
+            src='xxx'
+            className='img'
+          />
         </View>
-        <View>
-          <Button
-            className='button'
-            onClick={() => {
-              TrendBridge.navigateTo({ url: '/minePages/pages/index/index' })
-            }}
-          >
-            minePages 分包
-          </Button>
-
-        </View>
+      </View>
+      <View className='demo-bottom'>
+        <SafeAreaView>
+          <View className='demo-bottom-btn'>
+            <Text className='demo-bottom-btn-text'>底部按钮</Text>
+          </View>
+        </SafeAreaView>
       </View>
     </SafeAreaView>
   )
 }
 
-export default DebugPage
+export default Index
