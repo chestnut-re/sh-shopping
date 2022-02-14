@@ -25,6 +25,12 @@
       "@components": [
         "src/components"
       ],
+      "@utils": [
+        "src/utils"
+      ],
+      "@service": [
+        "src/service"
+      ],
       "@/*": [
         "*"
       ],

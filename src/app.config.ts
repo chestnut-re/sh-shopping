@@ -1,5 +1,18 @@
 export default {
-  pages: ['pages/home/index', 'pages/gift/index', 'pages/game/index', 'pages/mine/index', 'pages/index/index'],
+  pages: [
+    // 首页
+    'pages/home/index',
+    // 礼盒
+    'pages/gift/index',
+    // 游戏
+    'pages/game/index',
+    // 我的
+    'pages/mine/index',
+    // index
+    'pages/index/index',
+    // 测试页
+    'pages/debugPage/index',
+  ],
   tabBar: {
     custom: false,
     color: '#5F5F5F',

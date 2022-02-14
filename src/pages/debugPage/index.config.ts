@@ -1,4 +1,4 @@
 export default {
-  navigationBarTitleText: 'Debug',
+  navigationBarTitleText: 'Demo',
   enableShareAppMessage: true,
 }
