@@ -6,10 +6,9 @@ import { SafeAreaView } from '@components'
 import './index.less'
 
 const GiftPages: React.FC = () => {
-
-
   return (
     <View className='MineScreen__root'>
+      {/* View, Text, Image */}
       我的
     </View>
   )

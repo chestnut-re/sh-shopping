@@ -2,7 +2,7 @@ import Taro from '@tarojs/taro'
 
 /**
  * 多端差异磨平
- * 小程序, 微信h5, App, 普通浏览器
+ * 小程序, 微信h5(公众号), App, 普通浏览器
  */
 export class TrendBridge {
   /**
