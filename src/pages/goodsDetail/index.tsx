@@ -7,6 +7,7 @@ import BasicInfo from '../../components/goodsDetail/basicInfo'
 import CaseExplain from '../../components/goodsDetail/caseExplain'
 import CommentItem from '../../components/goodsDetail/comment'
 import GoodsView from '../../components/goodsDetail/goodsView'
+import SubmitBar from '../../components/goodsDetail/submitBar'
 
 import './index.less'
 
@@ -31,6 +32,10 @@ const GoodsDetailPage: React.FC = () => {
       <View className='details-box'>
         <GoodsView />
       </View>
+      <View className='submitBar-box'>
+        <SubmitBar />
+      </View>
+
     </View>
   )
 }

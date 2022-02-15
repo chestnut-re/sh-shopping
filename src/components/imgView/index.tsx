@@ -27,6 +27,7 @@ const ImgView: React.FC<Props> = ({ className = '',fit="fill", src = '', width =
         <Image
           width={width}
           height={height}
+          fit={fit}
           src='https://shanhai-shoping.oss-cn-beijing.aliyuncs.com/img/user/pic/327f2ff9f41a4276a670494e49954fb4.gif'
         />
       }
