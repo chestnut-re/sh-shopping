@@ -1,0 +1,56 @@
+.GoodsView__root {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  .goodsview-basic {
+    padding: 20px 20px 2px;
+    .goodsview-basic-header {
+      font-size: 14px;
+      font-weight: 500;
+      color: #000000;
+      line-height: 14px;
+    }
+    .goodsview-basic-content {
+      position: relative;
+      padding-top: 18px;
+      .gbc-item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0;
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+        .gbc-item-left {
+          width: 80px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #666666;
+          line-height: 14px;
+          text-align: left;
+        }
+        .gbc-item-right {
+          flex: 1;
+          font-size: 14px;
+          font-weight: 400;
+          color: #000000;
+          text-align: left;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  .goodsview-pic{
+    width: 100%;
+    .goodsview-pic-item{
+      font-size: 0;
+      .item-pic{
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+    
+  }
+}

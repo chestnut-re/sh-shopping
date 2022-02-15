@@ -18,6 +18,8 @@ export default {
     'pages/regiment/index',
     //榜单专题页
     'pages/topics/index',
+    // 商品详情页
+    'pages/goodsDetail/index',
   ],
   subpackages: [
     {
