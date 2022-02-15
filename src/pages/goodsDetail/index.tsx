@@ -14,8 +14,8 @@ import './index.less'
 const GoodsDetailPage: React.FC = () => {
   const swpierData = {
     banner: [
-      { image_src: 'https://100px.net/assets/img/1.23e4196d.svg' },
-      { image_src: 'https://100px.net/assets/img/2.8055de6f.svg' },
+      { image_src: 'https://img1.baidu.com/it/u=2284778989,1400001286&fm=253&fmt=auto&app=120&f=JPEG?w=1000&h=709' },
+      { image_src: 'https://img0.baidu.com/it/u=1208144021,871142642&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500' },
     ],
   }
 

@@ -4,7 +4,6 @@
 
 import React, { useCallback, useEffect, useState } from 'react'
 import { View, Text } from '@tarojs/components'
-import { Image } from '@antmjs/vantui'
 import Kef_icon from '@/assets/goodsdetail/kef_icon.png'
 import Dianp_icon from '@/assets/goodsdetail/dianp_icon.png'
 import Souc_icon from '@/assets/goodsdetail/souc_icon.png'

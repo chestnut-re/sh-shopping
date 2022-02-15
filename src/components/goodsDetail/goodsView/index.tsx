@@ -33,16 +33,19 @@ const GoodsView: React.FC<TagTypes> = () => {
       </View>
       <View className='goodsview-pic'>
         <View className='goodsview-pic-item'>
-          <ImgView src='https://dummyimage.com/414x288/ff3f4d/fff' className='item-pic' width={414} fit='widthFix' />
+          <ImgView src='https://img1.baidu.com/it/u=2284778989,1400001286&fm=253&fmt=auto&app=120&f=JPEG?w=1000&h=709' className='item-pic' width={414} fit='widthFix' />
         </View>
         <View className='goodsview-pic-item'>
-          <ImgView src='https://dummyimage.com/640x188/1f6cc0/fff' className='item-pic' width={414} fit='widthFix' />
+          <ImgView src='https://img0.baidu.com/it/u=3087268821,2632273689&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500' className='item-pic' width={414} fit='widthFix' />
         </View>
         <View className='goodsview-pic-item'>
-          <ImgView src='https://dummyimage.com/375x388/dd578d/fff' className='item-pic' width={414} fit='widthFix' />
+          <ImgView src='https://img1.baidu.com/it/u=1527632605,2471376061&fm=253&fmt=auto&app=138&f=PNG?w=500&h=492' className='item-pic' width={414} fit='widthFix' />
         </View>
         <View className='goodsview-pic-item'>
-          <ImgView src='https://dummyimage.com/414x288/8d94c1/fff' className='item-pic' width={414} fit='widthFix' />
+          <ImgView src='https://img1.baidu.com/it/u=78482633,1672724880&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500' className='item-pic' width={414} fit='widthFix' />
+        </View>
+        <View className='goodsview-pic-item'>
+          <ImgView src='https://img1.baidu.com/it/u=1527632605,2471376061&fm=253&fmt=auto&app=138&f=PNG?w=500&h=492' className='item-pic' width={414} fit='widthFix' />
         </View>
       </View>
     </View>
