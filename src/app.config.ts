@@ -16,6 +16,8 @@ export default {
     'pages/templatePage/index',
     //严选好团页
     'pages/regiment/index',
+    //榜单专题页
+    'pages/topics/index',
   ],
   subpackages: [
     {

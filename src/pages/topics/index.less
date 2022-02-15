@@ -1,7 +1,7 @@
-.Regiment__root {
+.Topic__root {
   .bannerView {
-    height: 310px;
-    background-color: #f5f0eb;
+    height: 200px;
+    background-color: #fc7a24;
     .bannerRule {
       float: right;
       width: 52px;
@@ -11,25 +11,26 @@
       background: #000000;
       opacity: 0.16;
       font-size: 10px;
-      color: #ffffff;
+      color: #ffcf49;
       text-align: center;
       margin-top: 19px;
       font-family: PingFangSC-Regular, PingFang SC;
     }
   }
   .contentView {
-    background-color: #ffffff;
-    border-radius: 19px 18px 0 0;
-    margin-top: -100px;
+    background-color: #f1f1f1;
     padding-top: 16px;
+    padding-bottom: 1px;
     .content {
+      &:first-child {
+        margin-top: -49px;
+      }
       display: flex;
-      margin: 0 auto 10px;
+      margin: 0px auto 10px;
       padding: 4px;
       width: 394px;
       height: 120px;
-      // background-color: aquamarine;
-      // background: #FFFFFF;
+      background-color: #ffffff;
       box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.07);
       border-radius: 4px;
       .contentImg {
@@ -66,11 +67,7 @@
         }
         .textPrice {
           padding-top: 20px;
-          color: #87764b;
-          .priceTitle {
-            font-size: 14px;
-            font-family: PingFangSC-Medium, PingFang SC;
-          }
+          color: #000000;
           .priceSymbol {
             font-size: 12px;
             font-family: Helvetica;
@@ -86,13 +83,14 @@
             width: 84px;
             height: 34px;
             text-align: center;
-            background: linear-gradient(90deg, #eed7ad 0%, #f2eac8 100%);
+            background: linear-gradient(90deg, #ffaa3a 0%, #fe8933 100%);
             box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
             border-radius: 2px;
             font-size: 16px;
             font-family: PingFangSC-Regular, PingFang SC;
             font-weight: 400;
             line-height: 34px;
+            color: #ffffff;
             text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
           }
         }

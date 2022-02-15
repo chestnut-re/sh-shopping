@@ -4,13 +4,14 @@ import { View, Text, Button, Image } from '@tarojs/components'
 import { useEnv, useNavigationBar, useModal, useToast } from 'taro-hooks'
 import './index.less'
 
-const RegimentPage: React.FC = () => {
+const TopicsPage: React.FC = () => {
   const data = [
     {
       key: '1',
       title: '湾仔码头 新年全家福梦想礼盒',
       tag: '智利进口',
       price: '99.67',
+      img: 'url',
     },
     {
       key: '2',
@@ -19,10 +20,31 @@ const RegimentPage: React.FC = () => {
       price: '99.67',
       img: 'url',
     },
+    {
+      key: '3',
+      title: '湾仔码头 新年全家福梦想礼盒',
+      tag: '智利进口',
+      price: '99.67',
+      img: 'url',
+    },
+    {
+      key: '4',
+      title: '湾仔码头 新年全家福梦想礼盒',
+      tag: '智利进口',
+      price: '99.67',
+      img: 'url',
+    },
+    {
+      key: '5',
+      title: '湾仔码头 新年全家福梦想礼盒',
+      tag: '智利进口',
+      price: '99.67',
+      img: 'url',
+    },
   ]
 
   return (
-    <View className='Regiment__root'>
+    <View className='Topic__root'>
       <View className='bannerView'>
         <View className='bannerRule'>
           <Text>规则</Text>
@@ -45,7 +67,6 @@ const RegimentPage: React.FC = () => {
                   <View className='empty'></View>
                 )}
                 <View className='textPrice'>
-                  <Text className='priceTitle'>拼团价&nbsp;&nbsp;</Text>
                   <Text className='priceSymbol'>¥</Text>
                   <Text className='price'>{item.price}</Text>
                   <Text className='priceBtn'>立即购买</Text>
@@ -59,4 +80,4 @@ const RegimentPage: React.FC = () => {
   )
 }
 
-export default RegimentPage
+export default TopicsPage
