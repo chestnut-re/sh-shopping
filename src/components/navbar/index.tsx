@@ -50,7 +50,7 @@ const NavBar: React.FC<Props> = ({ children, className }) => {
   return (
     <View className={`homeNavBars ${className}`}>
       <View style={{ height: `${systemInfo.statusBarHeight / systemInfo.pixelRate}rpx` }} className='status-bar'></View>
-      <View style={{ height: `${systemInfo.capsuleHeight / systemInfo.pixelRate}rpx` }} className='capsule-line'>
+      <View style={{ height: IS_WEAPP ? `${systemInfo.capsuleHeight / systemInfo.pixelRate}rpx` : '60px' }} className='capsule-line'>
         {children}
       </View>
     </View>

@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react'
 import Taro from '@tarojs/taro'
 import { View, Text, Button, Image, Swiper, SwiperItem } from '@tarojs/components'
 import { useEnv, useNavigationBar, useModal, useToast } from 'taro-hooks'
-import { ImgView, Navbar } from '@components'
+import { ImgView, Navbar, GoodsListView } from '@components'
 import './index.less'
 
 import HomeBg from '@assets/img/home/homebg.png'
@@ -34,13 +34,18 @@ const HomePages: React.FC = () => {
       capsuleHeight = 48
     }
     const titleHeight = (capsuleHeight + statusBarHeight) / pixelRate
-    setNavHeight(titleHeight)
+    if (IS_WEAPP) {
+      setNavHeight(titleHeight)
+    } else {
+      setNavHeight(65)
+    }
+
   }
 
   return (
     <View className='HomeScreen__root'>
       <Navbar className='home-navView'>
-        <View className='leftTextView'>
+        <View style={IS_H5 && { marginTop: '25px' }} className='leftTextView'>
           <Text className='leftTextView-txt'>
             有礼有趣
           </Text>
@@ -165,6 +170,12 @@ const HomePages: React.FC = () => {
           />
         </View>
       </View>
+      <View className='box_wrapper'>
+        <GoodsListView
+          data={[1, 2, 3, 4, 5]}
+        />
+      </View>
+
     </View>
   )
 }
