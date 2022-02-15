@@ -4,7 +4,9 @@ import Taro from '@tarojs/taro'
 import { useEnv, useNavigationBar, useModal, useToast } from 'taro-hooks'
 import { SafeAreaView, ImgView } from '@components'
 import './index.less'
-import { Tab, Tabs } from "@antmjs/vantui";
+import {
+  Tab, Tabs, PowerScrollView,
+} from "@antmjs/vantui";
 
 import '@antmjs/vantui/es/tab/style'
 import '@antmjs/vantui/es/tabs/style'
@@ -17,6 +19,11 @@ const GiftList: React.FC = () => {
     console.log('event', event)
     // setActive()
   }
+
+  const basicsDoRefresh = async (event) => {
+
+  }
+
   return (
     <SafeAreaView className='GiftListScreen__root'>
       <Tabs
@@ -25,7 +32,35 @@ const GiftList: React.FC = () => {
         onChange={onChange}
       >
         <Tab title='全部'>
-          全部
+          <PowerScrollView
+            finishedText='没有更多了'
+            className={`${IS_WEAPP ? 'min-' : ''}pull-basics`}
+            successText='刷新成功'
+            successDuration={1500}
+            onScrollToUpper={basicsDoRefresh}
+            // onScrollToLower={this.basicsLoadMore}
+            current={10}
+          // finished={this.state.basicsFinished}
+          >
+            <View className='call'>
+
+            </View>
+            <View className='call'>
+
+            </View>
+            <View className='call'>
+
+            </View>
+            <View className='call'>
+
+            </View>
+            <View className='call'>
+
+            </View>
+            <View className='call'>
+
+            </View>
+          </PowerScrollView>
         </Tab>
         <Tab title='未使用'>
           未使用

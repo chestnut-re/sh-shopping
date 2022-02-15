@@ -24,11 +24,7 @@ export default {
   subpackages: [
     {
       root: 'minePages',
-      pages: [
-        // 礼券列表
-        'pages/giftList/index',
-        'pages/index/index',
-      ],
+      pages: ['pages/giftList/index'],
     },
   ],
   tabBar: {
