@@ -23,7 +23,8 @@ export default {
     {
       root: 'minePages',
       pages: [
-        // 分包
+        // 礼券列表
+        'pages/giftList/index',
         'pages/index/index',
       ],
     },

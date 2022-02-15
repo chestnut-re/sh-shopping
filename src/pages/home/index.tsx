@@ -22,6 +22,11 @@ const HomePages: React.FC = () => {
   useEffect(() => {
     getNavbarHeight()
   }, [])
+  const goGiftList = () => {
+    Taro.navigateTo({
+      url: '/minePages/pages/giftList/index'
+    })
+  }
   const getNavbarHeight = () => {
     let res = Taro.getSystemInfoSync()
     const pixelRate = res.windowWidth / 414
@@ -144,7 +149,7 @@ const HomePages: React.FC = () => {
               <Image src={spike} className='img' />
             </View>
           </View>
-          <View className='box'>
+          <View onClick={goGiftList} className='box'>
             <View className='box-left'>
               <Text style={{ color: '#444' }} className='text1'>礼币兑</Text>
               <Text className='text2'>花礼币又省一笔</Text>
