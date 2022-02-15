@@ -14,6 +14,8 @@ export default {
     'pages/debugPage/index',
     // Template页
     'pages/templatePage/index',
+    //严选好团页
+    'pages/regiment/index',
   ],
   subpackages: [
     {
