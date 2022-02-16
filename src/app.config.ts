@@ -20,14 +20,13 @@ export default {
     'pages/topics/index',
     //店铺页
     'pages/shop/index',
+    // 商品详情页
+    'pages/goodsDetail/index',
   ],
   subpackages: [
     {
       root: 'minePages',
-      pages: [
-        // 分包
-        'pages/index/index',
-      ],
+      pages: ['pages/giftlist/index'],
     },
   ],
   tabBar: {

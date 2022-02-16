@@ -1,0 +1,80 @@
+.giftListView {
+  padding: 0 10px;
+  overflow: hidden;
+  .giftItemView {
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 10px;
+    .shopView {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .shopInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .shopLogo {
+          width: 16px;
+          height: 16px;
+          border-radius: 16px;
+          background-color: chartreuse;
+        }
+        .name {
+          margin-left: 4px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #000000;
+        }
+      }
+      .isUse {
+        font-size: 14px;
+        color: #a1a1a1;
+      }
+    }
+    .giftInfoView {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+      .giftImgView {
+        width: 80px;
+        height: 80px;
+        background-color: #efd8ae;
+      }
+      .giftNameView {
+        margin-left: 12px;
+        .name {
+          font-size: 16px;
+          font-weight: 600;
+          color: #444444;
+        }
+        .info {
+          margin-top: 4px;
+          font-size: 14px;
+          color: #444444;
+        }
+      }
+    }
+    .giftBottomInfo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 10px;
+      .item {
+        display: flex;
+        flex-direction: row;
+        .btn {
+          margin-left: 10px;
+          height: 30px;
+          border-radius: 4px;
+          border: 1px solid #ffd9db;
+          font-size: 14px;
+          font-weight: 400;
+          color: #ff3f4d;
+          padding: 0 9px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

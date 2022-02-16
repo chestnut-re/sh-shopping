@@ -1,0 +1,98 @@
+.goodsItemView {
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  .goodsItemImg {
+    width: 120px;
+    height: 120px;
+  }
+  .goodsIteminfo {
+    flex: 1;
+    padding-left: 12px;
+    overflow: hidden;
+
+    .goodsName {
+      margin-top: 6px;
+      line-height: 18px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      .txt {
+        font-size: 16px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #444444;
+        line-height: 18px;
+      }
+    }
+    .tagView {
+      display: flex;
+      flex-direction: row;
+      margin-top: 4px;
+      .item {
+        border-radius: 3px;
+        height: 20px;
+        border: 1px solid #feebdb;
+        margin-right: 4px;
+        line-height: 20px;
+        padding: 2px 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .txt {
+          line-height: 13px;
+          font-size: 13px;
+          font-weight: 400;
+          color: #f89b4c;
+        }
+      }
+    }
+    .goodsPriceHint {
+      margin-top: 18px;
+      line-height: 14px;
+      .txt {
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #ff3f4d;
+        line-height: 14px;
+      }
+    }
+    .goodsPriceView {
+      display: flex;
+      flex-direction: row;
+      line-height: 22px;
+      .priceView {
+        .RMB {
+          font-size: 12px;
+          font-family: JDZhengHT-Regular, JDZhengHT;
+          font-weight: 400;
+          color: #ff3f4d;
+          line-height: 15px;
+        }
+        .price {
+          font-size: 20px;
+          font-family: JDZhengHT-Regular, JDZhengHT;
+          font-weight: 400;
+          color: #ff3f4d;
+          line-height: 15px;
+        }
+      }
+      .linePriceView {
+        margin-left: 9px;
+        .txt {
+          font-size: 18px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #9c9c9c;
+          line-height: 25px;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}

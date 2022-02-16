@@ -1,0 +1,68 @@
+.SubmitBar__root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  transition: all 0.5s;
+  flex-shrink: 0;
+  box-shadow: 0px 2px 8px 0px rgba(122, 122, 122, 0.25);
+  .submitbar-left {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .submitbar-left-item {
+      flex: 1;
+      text-align: center;
+      .sli-box {
+        font-size: 11px;
+        font-weight: 400;
+        color: #5f5f5f;
+        line-height: 16px;
+        padding-top: 25px;
+      }
+    }
+  }
+  .submitbar-right {
+    width: 248px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .submitbar-right-l {
+      flex: 1;
+      height: 100%;
+      background: #fec7cb;
+    }
+    .submitbar-right-r {
+      flex: 1;
+      height: 100%;
+      background: #ff3f4d;
+    }
+    .srr-box {
+      text-align: center;
+      line-height: 1;
+      padding-top: 5px;
+      .srr-top-symbol {
+        font-size: 12px;
+        color: #ffffff;
+        line-height: 1;
+        margin-right: 2px;
+      }
+      .srr-top-num {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 1;
+      }
+      .srr-top-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 1;
+      }
+    }
+  }
+}
