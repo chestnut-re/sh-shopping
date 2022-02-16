@@ -29,11 +29,15 @@ const GiftList: React.FC = () => {
 
   const basicsDoRefresh = async (event) => {
     setGiftList([1, 2, 3, 4, 5])
+    setBasicsFinished(false)
+
   }
 
   const basicsLoadMore = async () => {
-    setGiftList([...giftList, 6, 7, 8, 9])
-    setBasicsFinished(true)
+    setTimeout(() => {
+      setGiftList([...giftList, 6, 7, 8, 9])
+      setBasicsFinished(true)
+    }, 3000)
   }
 
   return (

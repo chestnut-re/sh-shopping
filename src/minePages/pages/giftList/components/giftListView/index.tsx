@@ -41,7 +41,7 @@ const GoodsListView: React.FC<Props> = ({ data }) => {
             </View>
             <View className='giftNameView'>
               <View className='name'>
-                福利幸运盒
+                福利幸运盒{item}
               </View>
               <View className='info'>
                 {`3件装 ¥${'99.67'}/件 x1`}
