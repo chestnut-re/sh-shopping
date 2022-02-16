@@ -24,7 +24,7 @@ export default {
   subpackages: [
     {
       root: 'minePages',
-      pages: ['pages/giftList/index'],
+      pages: ['pages/giftlist/index'],
     },
   ],
   tabBar: {

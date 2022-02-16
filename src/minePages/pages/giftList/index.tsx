@@ -3,13 +3,15 @@ import { View, Text, Button, Image } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import { useEnv, useNavigationBar, useModal, useToast } from 'taro-hooks'
 import { SafeAreaView, ImgView } from '@components'
-import './index.less'
 import {
   Tab, Tabs, PowerScrollView,
 } from "@antmjs/vantui";
 
 import '@antmjs/vantui/es/tab/style'
 import '@antmjs/vantui/es/tabs/style'
+import './index.less'
+
+import GiftListView from './components/giftListView'
 
 const GiftList: React.FC = () => {
 
@@ -30,8 +32,19 @@ const GiftList: React.FC = () => {
         animated
         active={active}
         onChange={onChange}
+        className='giftTabs'
       >
         <Tab title='全部'>
+          <View className='box_wrapper'>
+            <View className='manyGiftView'>
+              <View className='titleView'>
+                礼券送亲友，可单券送、多券打包送
+              </View>
+              <View className='btn'>
+                多券打包送
+              </View>
+            </View>
+          </View>
           <PowerScrollView
             finishedText='没有更多了'
             className={`${IS_WEAPP ? 'min-' : ''}pull-basics`}
@@ -40,26 +53,10 @@ const GiftList: React.FC = () => {
             onScrollToUpper={basicsDoRefresh}
             // onScrollToLower={this.basicsLoadMore}
             current={10}
-          // finished={this.state.basicsFinished}
+            finished={false}
           >
-            <View className='call'>
+            <GiftListView data={[1, 2, 3, 4, 5]} />
 
-            </View>
-            <View className='call'>
-
-            </View>
-            <View className='call'>
-
-            </View>
-            <View className='call'>
-
-            </View>
-            <View className='call'>
-
-            </View>
-            <View className='call'>
-
-            </View>
           </PowerScrollView>
         </Tab>
         <Tab title='未使用'>

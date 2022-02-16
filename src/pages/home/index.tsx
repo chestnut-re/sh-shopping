@@ -24,7 +24,7 @@ const HomePages: React.FC = () => {
   }, [])
   const goGiftList = () => {
     Taro.navigateTo({
-      url: '/minePages/pages/giftList/index'
+      url: '/minePages/pages/giftlist/index'
     })
   }
   const getNavbarHeight = () => {
