@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useState, useEffect } from 'react'
 import { View, Text, Button, Image } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import { useEnv, useNavigationBar, useModal, useToast } from 'taro-hooks'
@@ -16,6 +16,11 @@ import GiftListView from './components/giftListView'
 const GiftList: React.FC = () => {
 
   const [active, setActive] = useState(0)
+  const [giftList, setGiftList] = useState() as any
+  const [basicsFinished, setBasicsFinished] = useState(false) as any
+  useEffect(() => {
+    basicsDoRefresh('')
+  }, [])
 
   const onChange = (event) => {
     console.log('event', event)
@@ -23,7 +28,12 @@ const GiftList: React.FC = () => {
   }
 
   const basicsDoRefresh = async (event) => {
+    setGiftList([1, 2, 3, 4, 5])
+  }
 
+  const basicsLoadMore = async () => {
+    setGiftList([...giftList, 6, 7, 8, 9])
+    setBasicsFinished(true)
   }
 
   return (
@@ -51,11 +61,12 @@ const GiftList: React.FC = () => {
             successText='刷新成功'
             successDuration={1500}
             onScrollToUpper={basicsDoRefresh}
-            // onScrollToLower={this.basicsLoadMore}
+            onScrollToLower={basicsLoadMore}
             current={10}
-            finished={false}
+            finished={basicsFinished}
+            pageSize={10}
           >
-            <GiftListView data={[1, 2, 3, 4, 5]} />
+            <GiftListView data={giftList} />
 
           </PowerScrollView>
         </Tab>
