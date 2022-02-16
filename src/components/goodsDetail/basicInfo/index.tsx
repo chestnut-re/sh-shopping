@@ -1,7 +1,5 @@
 /**
  * 价签组件
- * indicatorDots Boolean 是否显示面板指示点
- * indicatorColor String 指示点颜色
  */
 
 import React, { useCallback, useEffect, useState } from 'react'

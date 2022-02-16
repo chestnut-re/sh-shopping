@@ -1,0 +1,43 @@
+.wrapper-popup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 12px;
+  .wrapper-popup-header {
+    align-self: stretch;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+   
+    overflow: hidden;
+    .wph-title {
+      flex: 1;
+      text-align: center;
+      padding-left: 20px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 22px;
+    }
+    .wph-close {
+      width: 20px;
+      height: 20px;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8BAMAAADI0sRBAAAAG1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUUeIgAAAACXRSTlMAJgoiIAEHDhhTtOA/AAABF0lEQVQ4y+2TwQrCMBBERWj0OrYfoNR+QDzo1Yr0XATxWtA/EMFjb/rZBrGTbLInwZtz26TbedlMRn/9Stm9kwvm0QbVBCu5fUEfVFMU83B3XGMb/suikc0Qn5fIA3dTYyO8DhY7Xy2R3yR6iaILmmcfcMJYrL1z7p19+5zYG9/s3RtiV1xO4E3NGWnwHjuFj7BT+DOxNXhiK+5Ao2MT3hI71cmC2Jr7AsTWdIaDV8Rpc/JCnDYYm0TGYTM2lAjJibEJNVxV6+ALrX2YNmOTYLtmd/ZrDM+EVcPklfvgtDX4zGFXnPxOd35Lgc9KhoTwUQ55VSl8SWcN3kQ0fHF8/lUUm15sr9soNn1YPrvonHsuqDqO/vpaL5l8MF4x6sEXAAAAAElFTkSuQmCC") no-repeat center;
+      background-size: 100% auto;
+    }
+  }
+  .wrapper-popup-body {
+    flex: 1;
+    height: calc(100% - 50px);
+    width: 100%;
+    overflow: auto;
+  }
+}
+.van-popup--bottom.van-popup--safe {
+  border-radius: 12px 12px 0px 0px;
+}

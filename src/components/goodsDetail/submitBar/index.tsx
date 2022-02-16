@@ -9,14 +9,20 @@ import Dianp_icon from '@/assets/goodsdetail/dianp_icon.png'
 import Souc_icon from '@/assets/goodsdetail/souc_icon.png'
 import './index.less'
 
-interface SubmitBarTypes {}
+interface SubmitBarTypes {
+  onClickHandle:(val)=>void
+}
 
-const SubmitBar: React.FC<SubmitBarTypes> = () => {
+const SubmitBar: React.FC<SubmitBarTypes> = ({onClickHandle}) => {
   const SubmitConfig = [
     { icon_url: Kef_icon, name: '客服', id: '1' },
     { icon_url: Dianp_icon, name: '店铺', id: '2' },
     { icon_url: Souc_icon, name: '收藏', id: '3' },
   ]
+
+  const handleItemFun = ()=>{
+    onClickHandle("123")
+  }
 
   return (
     <View className='SubmitBar__root'>
@@ -38,7 +44,7 @@ const SubmitBar: React.FC<SubmitBarTypes> = () => {
           </View>
         </View>
         <View className='submitbar-right-r'>
-          <View className='srr-box'>
+          <View className='srr-box' onClick={handleItemFun}>
             <Text className='srr-top-symbol'>¥</Text>
             <Text className='srr-top-num'>19.9</Text>
             <View className='srr-top-text'>拼团购</View>

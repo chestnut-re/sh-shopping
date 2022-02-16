@@ -59,16 +59,16 @@ const CommentItem: React.FC<TagTypes> = () => {
 
         <View className='comment-body-pic'>
           <View className='cbp-item'>
-            <ImgView src='https://dummyimage.com/88x88/ff3f4d/fff' width={88} height={88} />
+            <ImgView src='https://img1.baidu.com/it/u=178217450,2035025185&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=400' fit='cover' width={88} height={88} />
           </View>
           <View className='cbp-item'>
-            <ImgView src='https://dummyimage.com/88x88/1f5f61/ccc' width={88} height={88} />
+            <ImgView src='https://img1.baidu.com/it/u=2284778989,1400001286&fm=253&fmt=auto&app=120&f=JPEG?w=1000&h=709' fit='cover' width={88} height={88} />
           </View>
           <View className='cbp-item'>
-            <ImgView src='https://dummyimage.com/88x88/288588/ccc' width={88} height={88} />
+            <ImgView src='https://img0.baidu.com/it/u=1540756952,1687876482&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=400' fit='cover' width={88} height={88} />
           </View>
           <View className='cbp-item'>
-            <ImgView src='https://dummyimage.com/88x88/ff3f4d/fff' width={88} height={88} />
+            <ImgView src='https://img1.baidu.com/it/u=2284778989,1400001286&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=709' fit='cover' width={88} height={88} />
           </View>
           <View className='cbp-more'>
             3+
