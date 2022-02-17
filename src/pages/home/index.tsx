@@ -3,6 +3,7 @@ import Taro from '@tarojs/taro'
 import { View, Text, Button, Image, Swiper, SwiperItem } from '@tarojs/components'
 import { useEnv, useNavigationBar, useModal, useToast } from 'taro-hooks'
 import { ImgView, Navbar, GoodsListView } from '@components'
+import HomeTabsView from './components/homeTabs'
 import './index.less'
 
 import HomeBg from '@assets/img/home/homebg.png'
@@ -19,6 +20,9 @@ import btn1 from '@assets/img/home/btn1.png'
 
 const HomePages: React.FC = () => {
   const [navHeight, setNavHeight] = useState(0)
+  const [way, setWay] = useState(1)
+
+
   useEffect(() => {
     getNavbarHeight()
   }, [])
@@ -44,6 +48,13 @@ const HomePages: React.FC = () => {
     } else {
       setNavHeight(65)
     }
+  }
+
+  const onWayClick = (data) => {
+    const { index } = data;
+    if (way == index) return
+    setWay(index)
+    console.log('datadatadata', index)
 
   }
 
@@ -176,9 +187,22 @@ const HomePages: React.FC = () => {
         </View>
       </View>
       <View className='box_wrapper'>
-        <GoodsListView
-          data={[1, 2, 3, 4, 5]}
+        <HomeTabsView
+          onWayClick={onWayClick}
+          activeIndex={way}
+          data={[{ name: '福虎年货', index: 1 }, { name: '福虎年货', index: 2 }]}
         />
+        {way == 1 && (
+          <GoodsListView
+            data={[1, 2, 3, 4, 5]}
+          />
+        )}
+        {way == 2 && (
+          <GoodsListView
+            data={[1, 2]}
+          />
+        )}
+
       </View>
 
     </View>

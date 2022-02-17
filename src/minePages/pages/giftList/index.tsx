@@ -41,6 +41,7 @@ const GiftList: React.FC = () => {
   }
 
   const basicsLoadMore = async () => {
+    console.log('1231231')
     setTimeout(() => {
       setGiftList([...giftList, 6, 7, 8, 9])
       setBasicsFinished(true)
@@ -56,7 +57,16 @@ const GiftList: React.FC = () => {
         className='giftTabs'
       >
         <Tab title='全部'>
-
+          <View className='box_wrapper'>
+            <View className='manyGiftView'>
+              <View className='titleView'>
+                礼券送亲友，可单券送、多券打包送
+              </View>
+              <View className='btn'>
+                多券打包送
+              </View>
+            </View>
+          </View>
           <PowerScrollView
             finishedText='没有更多了'
             className={`${IS_WEAPP ? 'min-' : ''}pull-basics`}
@@ -68,20 +78,21 @@ const GiftList: React.FC = () => {
             finished={basicsFinished}
             pageSize={10}
           >
-            <View className='box_wrapper'>
-              <View className='manyGiftView'>
-                <View className='titleView'>
-                  礼券送亲友，可单券送、多券打包送
-                </View>
-                <View className='btn'>
-                  多券打包送
-                </View>
-              </View>
-            </View>
+
             <GiftListView data={giftList} />
           </PowerScrollView>
         </Tab>
         <Tab title='未使用'>
+          <View className='box_wrapper'>
+            <View className='manyGiftView'>
+              <View className='titleView'>
+                礼券送亲友，可单券送、多券打包送
+              </View>
+              <View className='btn'>
+                多券打包送
+              </View>
+            </View>
+          </View>
           <PowerScrollView
             finishedText='没有更多了'
             className={`${IS_WEAPP ? 'min-' : ''}pull-basics`}
@@ -93,16 +104,6 @@ const GiftList: React.FC = () => {
             finished={basicsFinished}
             pageSize={10}
           >
-            <View className='box_wrapper'>
-              <View className='manyGiftView'>
-                <View className='titleView'>
-                  礼券送亲友，可单券送、多券打包送
-                </View>
-                <View className='btn'>
-                  多券打包送
-                </View>
-              </View>
-            </View>
             <GiftListView data={giftList} />
           </PowerScrollView>
         </Tab>
