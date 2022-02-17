@@ -22,6 +22,8 @@ export default {
     'pages/shop/index',
     // 商品详情页
     'pages/goodsDetail/index',
+    // 商品评价
+    'pages/productEva/index',
   ],
   subpackages: [
     {
