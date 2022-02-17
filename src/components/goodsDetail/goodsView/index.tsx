@@ -42,7 +42,7 @@ const GoodsView: React.FC<TagTypes> = () => {
           <ImgView src='https://img1.baidu.com/it/u=2284778989,1400001286&fm=253&fmt=auto&app=120&f=JPEG?w=1000&h=709' className='item-pic' width={414} fit='widthFix' />
         </View>
         <View className='goodsview-pic-item'>
-          <ImgView src='https://img1.baidu.com/it/u=78482633,1672724880&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500' className='item-pic' width={414} fit='widthFix' />
+          <ImgView src='https://m.360buyimg.com/mobilecms/s1265x1265_jfs/t1/220824/10/6957/587150/61b096a0E91e46d62/85644a78fc47a1b9.jpg!q70.dpg.webp' className='item-pic' width={414} fit='widthFix' />
         </View>
       </View>
     </View>

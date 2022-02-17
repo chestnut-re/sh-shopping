@@ -45,7 +45,7 @@ const BasicInfoTag: React.FC<TagTypes> = () => {
               )
             })}
           </View>
-          <View className='basic-body'>智利JJJ车厘子</View>
+          <View className='basic-body'>智利车厘子樱桃生鲜进口水果礼盒 巨无霸JJJ级 5斤原箱礼盒 果径约30-32mm 智利车厘子京鲜云仓直发</View>
           <View className='basic-foot'>
             <View className='basic-foot-left'>
               <Image width={24} height={24} round fit='cover' src='https://img.yzcdn.cn/vant/cat.jpeg' />

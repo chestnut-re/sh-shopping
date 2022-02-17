@@ -116,12 +116,12 @@ const GoodsSKU: React.FC<GoodsSKUTypes> = ({ HandleFun }) => {
         <View className='sku-footer van-hairline--top'>
           <View className='sku-footer-paytype'>
             <View className='sfp-left'>
-              礼币 <Text className='sfp-left-knock'>减¥20</Text>，余下用
+              礼币 <Text className='sfp-left-knock'>减¥20</Text>，余下
             </View>
             <View
               className='pay-icon'
-              style={{ background: `url(${WxPay}) no-repeat center`, backgroundSize: '100% auto' }}
-            ></View>
+              style={{ background: `url(${WxPay}) no-repeat right center`, backgroundSize: 'auto 90%' }}
+            >用</View>
             <View className='sfp-right'> 微信支付</View>
           </View>
           <View className='sku-footer-btn'>立即支付 ¥279</View>
