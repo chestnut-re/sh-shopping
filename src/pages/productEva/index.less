@@ -1,8 +1,46 @@
-
 .Product__root {
   position: relative;
   width: 100%;
-  background: #FAF7F7;
+  background: #faf7f7;
   overflow-x: hidden;
   overflow-y: auto;
+  .product-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    padding: 15px 8px;
+    .product-item {
+      margin: 0 11px;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 400;
+      color: #444444;
+      line-height: 1;
+      .product-nums{
+        color: #9C9C9C;
+      }
+    }
+
+    .product-header-r {
+      padding-left: 20px;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAtCAMAAADflBjwAAAASFBMVEUAAABOTk5GRkZHR0dKSkpFRUVFRUVJSUlGRkZYWFhGRkZNTU1JSUlGRkZISEhNTU1GRkZOTk5GRkZISEhHR0dGRkZGRkZHR0cPnUQfAAAAGHRSTlMAFYBvGHJ2InsERA4qZ1ITYQtVOzZXTi0keHIiAAABN0lEQVRIx72VyZKEIAxAY9gSQHDv///T0bGHKatV4NC+k5dnKmSD5+hjc0Ps4QCbIAhvIBEMQ8JZhaSUuEYRKuvS/y1h95LNDfLVIdm/GEbjECGDG1Ab2AnYOcgSOwxvV5CHAjyJ/b8NKVkiSEXNLmCpgN8T2HjvR30usJkMwxEjcONcsJr0Eo+CC+0KnQqNQE3Y+mMQXrnIwWg9jau0fOR1LRiWA6EYuVgA4Ekgzil5fllrF7oWVuSiUViX2nPjVoDet0iz27/tPM/ddYQ0V0RTWQ5vYkuWKwQXyiOkHPp3DsMwdAWvNPalr8TjVgd5rIPOVHoqrTT99lLI9FKmW+G6W2GsnAdg/zlxUuBG/Uw/sGaqN1/1bk3bO0IWt23v//vgIENM96H6AqUbJ7I3rvaKVt7px/gBfhASQZzs3uoAAAAASUVORK5CYII=')
+        no-repeat left center;
+      background-size: 16px auto;
+    }
+    .product-active{
+      color: #FF3F4D;
+    }
+  }
+  .product-body {
+    position: relative;
+    width: 100%;
+    .product-body-item {
+      margin-top: 10px;
+      padding: 0 10px;
+      background: #fff;
+      border-radius: 6px;
+    }
+  }
 }

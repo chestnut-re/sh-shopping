@@ -1,0 +1,146 @@
+.ProductItem__root {
+  position: relative;
+  background: #fff;
+  padding: 2px 12px 12px;
+  .product-container {
+    position: relative;
+
+    .product-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .product-header-left {
+        width: 44px;
+        height: 44px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      .product-header-center {
+        flex: 1;
+        font-size: 16px;
+        font-weight: 500;
+        color: #444444;
+        line-height: 11px;
+        padding-left: 10px;
+        .chc-right {
+          font-size: 14px;
+          font-weight: 400;
+          color: #a1a1a1;
+          line-height: 14px;
+          margin-left: 4px;
+        }
+      }
+      .product-header-right {
+        flex: 1;
+        font-size: 12px;
+        font-weight: 400;
+        color: #9c9c9c;
+        line-height: 17px;
+        text-align: right;
+      }
+    }
+
+    .product-body-top {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .cbt-score-l {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 26px;
+        .csl-left {
+          font-size: 14px;
+          font-weight: 400;
+          color: #ff3f4d;
+          line-height: 14px;
+        }
+        .csl-right {
+          font-size: 0;
+          line-height: 1;
+          margin-left: 3px;
+          .van-rate {
+            display: flex;
+          }
+        }
+      }
+      .cbt-score-c {
+      }
+      .cbt-score-r {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        color: #ff3f4d;
+        line-height: 14px;
+        .csr-right {
+          font-size: 0;
+          line-height: 1;
+          margin-left: 3px;
+          .van-rate {
+            display: flex;
+          }
+        }
+      }
+    }
+    .product-body-pic {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 11px;
+      &:after {
+        content: '';
+        width: calc(calc(100% / 3) - 4px);
+        height: 0;
+      }
+      .cbp-item {
+        width: calc(calc(100% / 3) - 4px);
+        height: 122px;
+        background: #fff;
+        border-radius: 2px;
+        overflow: hidden;
+        margin-bottom: 4px;
+      }
+    }
+    .product-body-text {
+      position: relative;
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #444444;
+      line-height: 20px;
+    }
+
+    .product-footer {
+      position: relative;
+      padding: 22px 0 8px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .pfg-item {
+        font-size: 13px;
+        font-weight: 400;
+        color: #444444;
+        line-height: 18px;
+        margin-left: 20px;
+        padding-left: 18px;
+        line-height: 1;
+      }
+      .product-f-give {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAilBMVEUAAABERERFRUVKSkpJSUlHR0dFRUVERERERERFRUVERERERERERERERERDQ0NERERFRUVHR0dGRkZERERERERFRUVHR0dERERERERFRUVFRUVFRUVFRUVFRUVERERFRUVFRUVFRUVERERERERFRUVGRkZHR0dFRUVFRUVERERFRUVERERERERERESdYixvAAAALXRSTlMA+6oEEBiy3fkH8unV4AzHoTMjtYpvFO3lm5ZmY1tURTm9gnVPQDApHs+6mY4UdaQGAAABa0lEQVQ4y43U526rMBiAYZtp9gzZq2nSdLz3f3vngJuqrSrzvX/4JB4shoX6M/9WFyZfhGq+5xhAR+2sDDMougL9Nif9NVSJSjo4ztCXguz0/3gyfMzQhaEux0sMa7cMItL9OBzhyU2bJXk4rQ57N10/FquhcS+qyYZpytGlSwYdZjtNgyZXrnYp59B+Mqhd8paTHuy4gd2vs2Vou7fNcVvBurR3kmOO9syQWNjn8WfFamngHKipa4YuYlvuPftK9fwo9R4776L5ln4PVAbRWAdEdX94vJ5kEX3VVSlmp4BgbAAdlP63Rwi+GsIdVCO1Ow+0Y19CKqQJGCFtYSWkB3gT0ifohTSCvYwmOfomo21B0croNaMKZXSf4gUyetF8+CKabNAXJaD2z3CQ0fCV7CSjbUZ8l9ETvPoyugVPyWgNCxn1Y2hk9ArLRETvFWzGIQVvCvD+6ryE1Yv9M82XbZPpS/QrtzPxezPJf+ZLRFWiOgOyAAAAAElFTkSuQmCC") no-repeat left center;
+        background-size: auto 100%;
+      }
+      .product-give-active {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAkFBMVEUAAAD/P07/P07/UZD/PUz/P03/P1D/P03/P03/P03/P03/QE3/P03/P07/Q0//QE3/QE7/QU//RVH/QVb/P03/P03/P03/P03/P03/P03/P03/TFP/P03/P03/P03/P07/QU3/QU7/P0//Qk//P07/QU7/P03/Qk//P07/PE3/P03/P03/P03/P07/QE3/P03pe12lAAAAL3RSTlMA+qoDELEY3fjp4mXUiwihMyMUC/HIvLOblm8G9O3mW1RFOQ51T0AwKR7Wz4LChCncGYoAAAFwSURBVDjLjdTpTqtQFEDhc5jnsQwtnVtbq9673v/tFI4xagzs9Ycd+DhhCurP7HseBcmmUss9+QDaLRelF0LURdAuSbuHJlNDB6cF+hwRnj+254B0gW4C8no8JaCfl47L6jAOJ3ibp8WOxJtWh8M87eH/NORQzC+qCc2zT9D17JV2BPE0VZoXNVe8pfXMK4N8Tt4TVkczriH+dbT2TI+yOMUN9LW5koTgZI44w7Tnkr74n0X7XQCtY1a4hejINyXWk61Uyo9WlqdMV823dH9RIbhjHeDm6fHyKbON+1X3bzs+FsAZq0A7tf3tFpyvqiqGZqTmywM9813CVkgz0EJawl5Ij9AK6RukQurCQUazBH2X0TIiKmX0FtJ4MnrYYl1k9KpJBxHN1uirElDzZzjKqPdKeJbRMsR/yOgZXgcZjcFSMprDRkZtHwoZvcEuE9FHA+txWIE1BVh/1e5g/2z+TMuF8TBSL93Pu8BfF9ko3wHtNUfVxuKoPQAAAABJRU5ErkJggg==") no-repeat left center;
+         background-size: auto 100%;
+      }
+      .product-f-discuss {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAwCAMAAACL67K2AAAAhFBMVEUAAABERERFRUVGRkZDQ0NERERFRUVERERFRUVLS0tERERERERCQkJFRUVERERERERERERGRkZFRUVGRkZHR0dERERFRUVERERFRUVGRkZERERFRUVFRUVFRUVERERERERDQ0NERERERERFRUVGRkZERERERERDQ0NFRUVERERERERERESmLQnLAAAAK3RSTlMAVqqEVPSN/FkJ+fAHMenmr082IRrUyWdDKO1tPbKfOhXipJSSuH1zwMBevgGPJAAAAUhJREFUSMft1dlygjAYhuHI4i8JawDZBNxt+93//TWYQWxHbY6qB75Hmfw+Ggdmwv4zv0pmJiWVP5KsCzlM4lGXaeJ1WhipzjubKgS2tkkWEFZn4xBaZlYLcrQBLENjAbO3eZubJk2cVL/sK6f39NYsyR6ZIHfFUg7EJlHb3ri1um/8IwdoO3xyA2ATqNUWALf9+8YmALFarUIA0fD17R+GJRsiStRiHXOQtR62aqKwfPB/fDnf6bOvm12jiKrfzaX/Cs/nbV7SxIYmHk3pQuznVwVsKrie7Gu4pb6ycsKP8gnJXzPKMz0oP4Vwp0DLEfVLwtVEiI/ycjlKZ3GpqRWS+mCK1Mdp5PQZu91XBDqkapEeCNHC7BYvIvA4ZWnMERU+M8orBKiVMUEUHjOtCUEcCBtmnncSUORk/Cv6eJFL48GMq8qKPblve2M+YsenW/YAAAAASUVORK5CYII=") no-repeat left center;
+        background-size: auto 100%;
+      }
+    }
+  }
+}

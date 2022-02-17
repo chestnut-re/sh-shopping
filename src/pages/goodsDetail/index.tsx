@@ -34,6 +34,13 @@ const GoodsDetailPage: React.FC = () => {
     type: 1,
   })
 
+  //处理评论列表跳转
+  const onAllProductNavigateTo = () => {
+    Taro.navigateTo({
+      url: '/pages/productEva/index',
+    })
+  }
+
   const onChangeReceiveFun = item => {
     const { type } = item
     if (type === '4') {
@@ -59,7 +66,7 @@ const GoodsDetailPage: React.FC = () => {
         <CaseExplain receiveChange={onChangeReceiveFun} />
       </View>
       <View className='commentList-box'>
-        <CommentItem />
+        <CommentItem onAllProduct={onAllProductNavigateTo} />
       </View>
       <View className='details-box'>
         <GoodsView />
@@ -76,6 +83,7 @@ const GoodsDetailPage: React.FC = () => {
       >
         {popupType.type === 1 && <GoodsSku HandleFun={HandleFunction} />}
         {popupType.type === 2 && <NoShipment HandleFun={HandleFunction} />}
+        
       </PopupView>
     </View>
   )

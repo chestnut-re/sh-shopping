@@ -3,8 +3,8 @@
  * 插槽形式加载组件
  */
 
-import React, { useCallback, useEffect, useState } from 'react'
-import { View, Text } from '@tarojs/components'
+import React, { useEffect, useState } from 'react'
+import { View } from '@tarojs/components'
 import { Popup } from '@antmjs/vantui'
 import '@antmjs/vantui/es/popup/style'
 import './index.less'
@@ -17,13 +17,20 @@ interface PopupViewTypes {
 
 const PopupView: React.FC<PopupViewTypes> = ({showView=false,title="弹框",children=[],onClose}) => {
   const [childrenDom,setChildrenDom] = useState();
-
+ const isArrayFn = (o)=> {
+    return Array.isArray(o);
+    }
   useEffect(()=>{
       if (showView&&children) {
-       const B = children.find(item => { return item })
-       setChildrenDom(B)
+        if (isArrayFn(children)) {
+          const B = children.find(item => { return item })
+          setChildrenDom(B)
+        }else{
+          setChildrenDom(children)
+        }
+      
       }
-  },[showView])
+  },[showView,children])
   
   console.log('showView :>> ', children);
   return (

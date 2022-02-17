@@ -8,11 +8,14 @@ import { Image, Rate } from '@antmjs/vantui'
 import ImgView from '../../imgView'
 import './index.less'
 
-interface TagTypes {}
+interface TagTypes {
+  onAllProduct:()=>void
+}
 
-const CommentItem: React.FC<TagTypes> = () => {
+const CommentItem: React.FC<TagTypes> = ({onAllProduct}) => {
+
+  
   return (
-   
     <View className='CommentItem__root'>
       <View className='comment-nav'>
           <View className='comment-nav-header'>
@@ -20,11 +23,11 @@ const CommentItem: React.FC<TagTypes> = () => {
                 <Text className='cnh-left-title'>商品评价</Text>
                 <Text  className='cnh-left-num'>200+</Text>
               </View>
-              <View className='cnh-right'>
+              <View className='cnh-right' onClick={onAllProduct}>
               查看全部
               </View>
           </View>
-          <View className='comment-nav-content'>
+          <View className='comment-nav-content' onClick={onAllProduct}>
               <View className='cnc-item'>包装精致 200+</View>
               <View className='cnc-item'>包装精致 200+</View>
           </View>
@@ -57,7 +60,7 @@ const CommentItem: React.FC<TagTypes> = () => {
           </View>
         </View>
 
-        <View className='comment-body-pic'>
+        <View className='comment-body-pic' onClick={onAllProduct}>
           <View className='cbp-item'>
             <ImgView src='https://img1.baidu.com/it/u=178217450,2035025185&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=400' fit='cover' width={88} height={88} />
           </View>

@@ -37,7 +37,7 @@ const SubmitBar: React.FC<SubmitBarTypes> = ({onClickHandle}) => {
       </View>
       <View className='submitbar-right'>
         <View className='submitbar-right-l'>
-          <View className='srr-box'>
+          <View className='srr-box' onClick={handleItemFun}>
             <Text className='srr-top-symbol'>¥</Text>
             <Text className='srr-top-num'>48.9</Text>
             <View className='srr-top-text'>单独买</View>

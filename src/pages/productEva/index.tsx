@@ -3,7 +3,7 @@ import Taro from '@tarojs/taro'
 import { View, Text, Button, Image } from '@tarojs/components'
 import { SafeAreaView } from '@components'
 import SWiperNav from '../../components/goodsDetail/swiper'
-import BasicInfo from '../../components/goodsDetail/basicInfo'
+import ProductItem from '../../components/productEva/productItem'
 
 import './index.less'
 /**
@@ -20,7 +20,22 @@ const ProductEvaluation: React.FC = () => {
  
   return (
     <View className='Product__root'>
-
+      <View className='product-header'>
+          <View className='product-header-l product-item product-active'>
+          全部
+          </View>
+          <View className='product-header-r product-item'>
+          视频/图片<Text className='product-nums'>(18)</Text>
+          </View>
+      </View>
+      <View className='product-body'>
+          {[1,2,3,4].map((item,index)=>{
+              return (<View className='product-body-item' key={index}>
+              <ProductItem />
+          </View>)
+          })}
+      </View>
+        
     </View>
   )
 }
