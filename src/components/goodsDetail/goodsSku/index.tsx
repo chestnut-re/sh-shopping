@@ -6,7 +6,7 @@ import React, { useCallback, useEffect, useState } from 'react'
 import { View, Text } from '@tarojs/components'
 import { Stepper } from '@antmjs/vantui'
 import ImgView from '../../imgView'
-import WxPay from '../../../assets/goodsdetail/wxpay.png'
+import WxPay from '../../../assets/img/goods/wxpay.png'
 import '@antmjs/vantui/es/stepper/style'
 import './index.less'
 

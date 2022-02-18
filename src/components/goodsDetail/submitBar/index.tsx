@@ -4,9 +4,9 @@
 
 import React, { useCallback, useEffect, useState } from 'react'
 import { View, Text } from '@tarojs/components'
-import Kef_icon from '@/assets/goodsdetail/kef_icon.png'
-import Dianp_icon from '@/assets/goodsdetail/dianp_icon.png'
-import Souc_icon from '@/assets/goodsdetail/souc_icon.png'
+import Kef_icon from '@/assets/img/goods/kef_icon.png'
+import Dianp_icon from '@/assets/img/goods/dianp_icon.png'
+import Souc_icon from '@/assets/img/goods/souc_icon.png'
 import './index.less'
 
 interface SubmitBarTypes {
