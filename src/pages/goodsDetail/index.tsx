@@ -83,7 +83,7 @@ const GoodsDetailPage: React.FC = () => {
       >
         {popupType.type === 1 && <GoodsSku HandleFun={HandleFunction} />}
         {popupType.type === 2 && <NoShipment HandleFun={HandleFunction} />}
-        
+
       </PopupView>
     </View>
   )

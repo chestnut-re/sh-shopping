@@ -73,25 +73,25 @@ const BasicInfoTag: React.FC<TagTypes> = () => {
                   <View className='basic-foot-left'>
                     <Image width={24} height={24} round fit='cover' src='https://img.yzcdn.cn/vant/cat.jpeg' />
                   </View>
-                  <View className='basic-foot-center'>沈*宜 10秒前付款成功！</View>
+                  <View className='basic-foot-center van-ellipsis'>沈*宜 10秒前付款成功！</View>
                 </SwiperItem>
                 <SwiperItem className='basic-swiper-item'>
                   <View className='basic-foot-left'>
                     <Image width={24} height={24} round fit='cover' src='https://img.yzcdn.cn/vant/cat.jpeg' />
                   </View>
-                  <View className='basic-foot-center'>王*宜 20秒前付款成功！</View>
+                  <View className='basic-foot-center'>王*宜 1分钟前付款成功！</View>
                 </SwiperItem>
                 <SwiperItem className='basic-swiper-item'>
                   <View className='basic-foot-left'>
                     <Image width={24} height={24} round fit='cover' src='https://img.yzcdn.cn/vant/cat.jpeg' />
                   </View>
-                  <View className='basic-foot-center'>马*宜 20秒前付款成功！</View>
+                  <View className='basic-foot-center'>马*宜 1小时前付款成功！</View>
                 </SwiperItem>
                 <SwiperItem className='basic-swiper-item'>
                   <View className='basic-foot-left'>
                     <Image width={24} height={24} round fit='cover' src='https://img.yzcdn.cn/vant/cat.jpeg' />
                   </View>
-                  <View className='basic-foot-center'>沈宜 20秒前付款成功！</View>
+                  <View className='basic-foot-center'>沈*宜 20秒前付款成功！</View>
                 </SwiperItem>
               </Swiper>
             </View>
